@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;900&display=swap');
+
+*{
+  font-family: Mulish, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar-nav .nav-link {
+  color: #000;
+  transition: font-weight 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  font-weight: 700;
+  color: #fff;
+}
+
+.banner {
+  background: url("../img/home-lg.jpg") center/cover no-repeat;
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+.banner-btn {
+  margin: 15px;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  max-height: 300px; /* Set your desired max height */
+}
+
+.carousel-content {
+  display: flex;
+  animation: carousel-animation 10s infinite linear;
+}
+
+.carousel-item {
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes carousel-animation {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  20% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-100%);
+  }
+  45% {
+      transform: translateX(-100%);
+  }
+  50% {
+      transform: translateX(-200%);
+  }
+  70% {
+      transform: translateX(-200%);
+  }
+  75% {
+      transform: translateX(-300%);
+  }
+  95% {
+      transform: translateX(-300%);
+  }
+  100% {
+      transform: translateX(-400%);
+  }
+}
